@@ -14,8 +14,10 @@
 	<br />
 	<b>E-mail:</b><br><input type="text" size="50" name="email">
 	
-	<br><br><input type ="submit" value="Register">
+	<br><br>
+	<input type ="submit" value="Register">
 	<p><i><b>Note: </b>Email addresses are kept confidential.</i></p>
 	<input type="hidden" name="content" value="adduser">
-	<br><br><hr size="1" noshade="noshade">
+	<br><br>
+	<hr size="1" noshade="noshade">
 </form>

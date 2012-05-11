@@ -1,6 +1,5 @@
 <h3>WHAT'S COOKIN - THE LATEST NEWS</h3>
 
-
 <?php
 
 	$con = mysql_connect("localhost","test","test") or die('Sorry, could not connect to server');

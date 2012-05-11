@@ -32,14 +32,12 @@
 		<td><hr size="0" noshade="noshade" /></td>
 	</tr>
 	<tr>
-	<td>
-		<form action="index.php" method="get">
-		
-				<input name="searchFor" type="text" size="16" color = "grey" value = "Search for recipe :)"
-				 onclick="this.value='';"/><br>
-				<div align = "left"><input name="goButton" type="submit" value="Search" /></div>
-				<input name="content" type="hidden" value="search" />
-		 </form>  
-	</td>
+		<td>
+			<form action="index.php" method="get">
+					<input name="searchFor" type="text" size="16" color = "grey" value = "Search for Recipe" onclick="this.value='';"/><br>
+					<div align = "left"><input name="goButton" type="submit" value="Search" /></div>
+					<input name="content" type="hidden" value="search" />
+			 </form>  
+		</td>
 	</tr>
 </table>

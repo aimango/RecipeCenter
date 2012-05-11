@@ -8,8 +8,8 @@
 	//htmlspecialchars converts HTML code characters into text values that the Web browser will display but not interpret as HTML code. 
 
 	if (!get_magic_quotes_gpc()){ //add backslashes to single+double quotes & backslashes for these 2 fields
-	   $ingredients = addslashes($ingredients);
-	   $directions = addslashes($directions);
+		$ingredients = addslashes($ingredients);
+		$directions = addslashes($directions);
 	}
 
 	if (trim($poster) == ''){//trim will get rid of leading/trailing spaces. also checks for blank poster name

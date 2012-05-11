@@ -25,11 +25,11 @@
 		$offset=($thispage-1)*$recipesperpage;
 		$query = "SELECT recipeid,title,poster,shortdesc FROM recipes ORDER BY recipeid DESC LIMIT $offset,$recipesperpage";
 		$result = mysql_query($query) or die('Sorry, could not get recipes at this time ');
-			
-		while($row=mysql_fetch_array($result, MYSQL_ASSOC)){
+		
 		//ASSOC references data fields by name, NUM references data fields by number (startin with 0)
 		//fetch_array retrieves the result set from the query and places it into an array variable. 
-		//while loop ends when fetch array is false
+		//while loop ends when fetch array is false		
+		while($row=mysql_fetch_array($result, MYSQL_ASSOC)){
 			$recipeid = $row['recipeid'];
 			$title = $row['title'];
 			$poster = $row['poster'];
@@ -57,9 +57,11 @@
 			for ($page=1; $page<=$totpages; $page++){
 				if ($page==$thispage)
 					$bar.=" <b>$page</b> ";
+					
 				else // brackets around page links to increase mouse target area
 					$bar.="<a href=\"index.php?content=main&page=$page\">[$page]</a>";
 			}
+			
 			// table to nicely format page navigation
 			echo "<table width=\"100%\">\n";
 			echo "<tr><td colspan=\"3\" style=\"text-align: center\">Page $thispage of $totpages</td></tr>\n";
