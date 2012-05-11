@@ -14,5 +14,3 @@ Recipe Center simulation project - view and share recipes!
 	*Tweak user authentication/sessions
 	*Add Facebook/Twitter/other social networking integration
 	*Improve visual look&feel 
-
-
