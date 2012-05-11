@@ -8,9 +8,15 @@ Recipe Center simulation project - view and share recipes!
 -Accounts, recipes, news, and commenting databases managed via mySQL database
 
 -Todo list:
-	*Add Categories for recipes
-	*Host this somewhere
-	*Add email confirmation when creating account
-	*Tweak user authentication/sessions
-	*Add Facebook/Twitter/other social networking integration
-	*Improve visual look&feel 
+	
+	* 	Add Categories for recipes
+	
+	* 	Host this somewhere
+	
+	* 	Add email confirmation when creating account
+	
+	* 	Tweak user authentication/sessions
+	
+	* 	Add Facebook/Twitter/other social networking integration
+	
+	* 	Improve visual look&feel 
