@@ -4,18 +4,17 @@
 	$poster = $_POST['poster'];
 	$shortdesc = $_POST['shortdesc'];
 	$ingredients = htmlspecialchars($_POST['ingredients']);
-	$directions = htmlspecialchars($_POST['directions']);
-	//htmlspecialchars converts HTML code characters into text values that the Web browser will display but not interpret as HTML code. 
+	$directions = htmlspecialchars($_POST['directions']); // converts HTML code characters into text values that the Web browser will display but not interpret as HTML code. 
 
 	if (!get_magic_quotes_gpc()){ //add backslashes to single+double quotes & backslashes for these 2 fields
 		$ingredients = addslashes($ingredients);
 		$directions = addslashes($directions);
 	}
 
-	if (trim($poster) == ''){//trim will get rid of leading/trailing spaces. also checks for blank poster name
+	if (trim($poster) == ''){ //trim will get rid of leading/trailing spaces. also checks for blank poster name
 		echo "<h2>Sorry, each recipe must have a poster.</h2>\n";
 	}
-	else{
+	else {
 		$con = mysql_connect("localhost", "test", "test") or die('Could not connect to server.');
 		mysql_select_db("recipe", $con) or die('Could not connect to database.');
 		

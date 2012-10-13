@@ -12,11 +12,13 @@
 	" VALUES ($recipeid, '$poster', '$date', '$comment')";
 
 	$result = mysql_query($query);
-	if ($result)
+	if ($result) {
 		echo "<h2>Comment posted!</h2>\n";
-	else
+	}
+	else {
 		echo "<h2>Sorry, there was a problem posting your comment :(</h2>\n";
-
+	}
+	
 	echo "<a href=\"index.php?content=showrecipe&id=$recipeid\">Return to recipe</a>\n";
 
 ?>

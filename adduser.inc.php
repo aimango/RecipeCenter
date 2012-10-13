@@ -1,12 +1,13 @@
 <?php
-
 	$con = mysql_connect("localhost","test","test");
+
 	if (!$con){
 		echo "<h2>Sorry, we cannot process your request at this time, please try again later.</h2>\n";
 		echo "<a href=\"index.php?content=register\">Click here to try again</a><br>\n";
 		echo "<a href=\"index.php\">Return to Home</a>\n";
 		exit;
 	}
+
 	mysql_select_db("recipe",$con) or die ('Could not connect to database');
 	$userid = $_POST['userid'];
 	$password = $_POST['password'];

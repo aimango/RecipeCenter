@@ -1,5 +1,4 @@
 <?php
-
 	$con = mysql_connect("localhost", "test", "test") or die('Could not connect to server');
 	mysql_select_db("recipe", $con) or die('Could not connect to database');
 
@@ -19,6 +18,5 @@
 	   echo "<h2>Welcome back, "."$userid". "!</h2><br>\n";
 	   echo "<a href=\"index.php\">Return to Home</a>\n";
 	}
-
 ?>
 <br><hr size="1" noshade="noshade">

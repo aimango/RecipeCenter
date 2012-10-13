@@ -3,6 +3,7 @@
 		<link rel="stylesheet" type="text/css" href="print.css" />
 		<title>The Recipe Center - Printer Friendly</title>
 	</head>
+	
 	<body>
 		<table width="400" border="1">
 			<tr><td>

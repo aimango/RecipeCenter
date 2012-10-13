@@ -9,9 +9,11 @@
 	$result = mysql_query($query) or die ('Could not query database at this time');
 	
 	echo "<h1>Search Results for" ." $search:</h1><br><br>\n";
-	if (mysql_num_rows($result) == 0)
+	
+	if (mysql_num_rows($result) == 0){
 		echo "<h2>Sorry, no recipes were found with '$search' in them.</h2>";
-	else{
+	}
+	else {
 		while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
 			$recipeid = $row['recipeid'];
 			$title = $row['title'];

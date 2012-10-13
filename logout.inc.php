@@ -1,5 +1,4 @@
 <?php
-	
 	if (isset($_SESSION['valid_recipe_user'])){
 		$user = $_SESSION['valid_recipe_user'];
 		echo "<h2>$user, You are now logged out. </h2>\n";

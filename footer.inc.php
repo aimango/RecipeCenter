@@ -1,1 +1,4 @@
-<a href="mailto:elisa.lou@live.ca"><font size="2">Contact Us</font></a><font size="2"> | © 2011 Elisa Lou. </font>
+<a href="mailto:classic.melody@gmail.com">
+	<font size="2">Contact Administrator</font>
+</a>
+<font size="2"> | © 2012 insert name here ;)</font>
