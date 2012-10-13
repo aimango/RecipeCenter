@@ -6,21 +6,21 @@
 
 <?php
 	} else { //i realize sneaking in php like this is so sketch.. o.0
-	   $userid = $_SESSION['valid_recipe_user'];
+		$userid = $_SESSION['valid_recipe_user'];
 ?>
 
 <form action="index.php" method="post">
-   <h1>Share your Recipe:</h1><br>
-   <h3>Title:</h3><input type="text" size="40" name="title"><br>
-   <br><h3>Short Description:</h3><br><textarea rows="5" cols="50" name="shortdesc"></textarea><br>
-   <br><h3>Ingredients (one item per line)</h3>
-   <textarea rows="10" cols="50" name="ingredients"></textarea><br>
-   <br><h3>Directions</h3>
-   <textarea rows="10" cols="50" name="directions"></textarea><br>
-   <br><input type="submit" value="Submit">
+	<h1>Share your Recipe:</h1><br>
+	<h3>Title:</h3><input type="text" size="40" name="title"><br>
+	<br><h3>Short Description:</h3><br><textarea rows="5" cols="50" name="shortdesc"></textarea><br>
+	<br><h3>Ingredients (one item per line)</h3>
+	<textarea rows="10" cols="50" name="ingredients"></textarea><br>
+	<br><h3>Directions</h3>
+	<textarea rows="10" cols="50" name="directions"></textarea><br>
+	<br><input type="submit" value="Submit">
 
-   <input type="hidden" name="poster" value="<?php echo $userid; ?>"><br>
-   <input type="hidden" name="content" value="addrecipe">
+	<input type="hidden" name="poster" value="<?php echo $userid; ?>"><br>
+	<input type="hidden" name="content" value="addrecipe">
 </form>
 
 <?php

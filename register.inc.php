@@ -1,6 +1,7 @@
 <h1>Registration Form</h1>
 <p>Register at Recipe Center to share your recipes and comment on other recipes!</p><br>
 <h3>Please enter the following information (* indicates required fields):</h3><br>
+
 <form action="index.php" method="post" target="_self">
 	<b>Username: *</b><br><input type="text" name="userid"><br>
 	<br />

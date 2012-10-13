@@ -1,4 +1,4 @@
-RecipeCenter
+Recipe Center
 ============
 
 Recipe Center webapp - view and share recipes!
